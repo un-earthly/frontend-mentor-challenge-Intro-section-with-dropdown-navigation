@@ -19,6 +19,18 @@ li {
     list-style: none;
 }
 
+.white {
+    color: hsl(0, 0%, 98%);
+}
+
+.gray {
+    color: hsl(0, 0%, 41%)
+}
+
+.black {
+    color: hsl(0, 0%, 8%)
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -35,7 +47,6 @@ nav>ul {
 
 nav>ul>li {
     margin: 2px 10px;
-    /* padding: 3px 20px; */
 
 }
 
@@ -48,7 +59,7 @@ nav>ul>li>a:hover {
     padding: 3px 10px;
 }
 
-.dropdown-menu {
+.dropdown__menu {
     background: hsl(0, 0%, 98%);
     color: hsl(0, 0%, 41%);
     position: absolute;
@@ -62,37 +73,96 @@ nav>ul>li>a:hover {
     pointer-events: none;
 }
 
-.dropdown-link {
-    padding: 2px 4px;
+.dropdown__link {
+    padding: 8px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.dropdown-link:hover {
+.dropdown__link:hover {
     color: hsl(0, 0%, 8%);
     cursor: pointer;
 }
 
-.dropdown.active>.dropdown-menu {
+.dropdown.active>.dropdown__menu {
     opacity: 1;
     pointer-events: auto;
 }
 
-.duration-500 {
-    color: hsl(0, 0%, 41%);
+.dropdown__btn {
+    color: hsl(0, 0%, 41%)
 }
 
-
+.dropdown.active>.dropdown__btn {
+    color: hsl(0, 0%, 8%)
+}
 
 .btn {
     background: hsl(0, 0%, 8%);
     color: hsl(0, 0%, 98%);
     border: 1px solid transparent;
-    padding: 14px 16px;
+    padding: 14px 20px;
     border-radius: 16px;
     transition: .5s;
+    cursor: pointer;
 }
 
 .btn:hover {
     border: hsl(0, 0%, 8%) 1px solid;
     color: hsl(0, 0%, 8%);
     background: transparent;
+}
+
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text__container {
+    width: 50%;
+    margin-top: 7rem;
+    padding: 0 14px;
+}
+
+.text__container>h1 {
+    font-size: 64px;
+}
+
+.text__container>p {
+    margin: 25px 0;
+    line-height: 1.5rem;
+}
+
+.logos__container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-center;
+}
+
+.logos__logo {
+    margin: 0 2px;
+}
+
+.banner__container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__img {
+    width: 70%;
+}
+
+footer {
+    margin-top: 2.3rem;
+    text-align: center;
 }
