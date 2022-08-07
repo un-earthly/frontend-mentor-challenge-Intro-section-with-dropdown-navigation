@@ -12,3 +12,9 @@ document.addEventListener('click', e => {
     })
 
 })
+
+
+
+function openSidebar() {
+
+}
