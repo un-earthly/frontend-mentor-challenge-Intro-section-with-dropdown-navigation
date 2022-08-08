@@ -10,11 +10,18 @@ document.addEventListener('click', e => {
         if (dropdown === currentDropdown) return
         dropdown.classList.remove('active')
     })
-
 })
 
 
 
+const sidebar = document.getElementById('sidebar');
 function openSidebar() {
-
+    if (sidebar.classList.contains('active')) {
+        sidebar.classList.remove('active')
+    } else {
+        sidebar.classList.add('active')
+    }
+}
+function closeSideBar() {
+    sidebar.classList.remove('active')
 }

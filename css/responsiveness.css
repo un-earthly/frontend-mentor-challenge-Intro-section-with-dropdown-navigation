@@ -1,10 +1,13 @@
 @media (min-width:320px) and (max-width:768px) {
+    .only_desktop {
+        display: inline;
+    }
+
     body {
         font-size: 12px;
     }
 
     nav {
-
         position: relative;
     }
 
@@ -14,6 +17,7 @@
 
     .container {
         width: 100%;
+        flex-direction: column-reverse;
     }
 
     .burger {
@@ -22,30 +26,72 @@
 
     .mobile__menu {
         display: block;
-        position: absolute;
-        height: 100vh;
+        position: fixed;
         width: 100%;
-        background: #000000;
+        transition: 0.5s;
         top: 0;
-        left: 0;
+        right: 100%;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .mobile__menu.active {
+        right: 0;
     }
 
     .mobile__nav {
         width: 70%;
-        height: 100vh;
         margin-left: auto;
         padding: 10px;
         font-size: 16px;
     }
 
-    .dropdown__menu {
-        background: hsl(0, 0%, 98%);
-        color: hsl(0, 0%, 41%);
-        position: static;
-        padding: 14px 8px;
+    .mobile__nav>*+* {
+        margin-top: 15px;
+    }
+
+    .mobile__nav>img {
+        width: 20px;
+        display: block;
+        margin-left: auto;
+    }
+
+    .mobile__nav.dropdown__menu {
+        background: none;
+        z-index: 10;
+    }
+
+    .text__container {
+        width: 90%;
+    }
+
+    .banner__container {
+        width: 100%;
+    }
+
+    .text__container h1 {
+        font-size: 2rem;
+    }
+
+    .text__container button {
+        display: block;
+        margin: auto;
+    }
+
+    .logos__container {
+        width: 50%;
     }
 
     .logos__logo {
         width: 50%;
+    }
+
+    .banner__img__desktop {
+        display: none;
+    }
+
+    .banner__img__mobile {
+        display: block;
+        width: 100%;
     }
 }

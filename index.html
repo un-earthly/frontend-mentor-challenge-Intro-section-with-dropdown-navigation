@@ -50,9 +50,9 @@
     <!-- Mobile Menu -->
     <img src="./images/icon-menu.svg" onclick="openSidebar()" class="burger">
 
-    <div class="mobile__menu">
+    <div id="sidebar" class="mobile__menu">
       <div class="mobile__nav">
-        <img src="./images/icon-close-menu.svg" alt="">
+        <img onclick="closeSideBar()" src="./images/icon-close-menu.svg" alt="">
         <div class="dropdown" data-dropdown>
           <li class="dropdown__btn" data-dropdown-btn>Features <img src="./images/icon-arrow-down.svg" alt="">
           </li>
@@ -89,14 +89,16 @@
 
   <main class="container">
     <div class="text__container">
-      <h1>Make remote work</h1>
+
+      <h1>Make <span class="only_desktop">
+          remote work
+        </span></h1>
 
 
       <p class="gray">Get your team in sync, no matter your location. Streamline processes,
         create team rituals, and watch productivity soar.</p>
 
-      <button class="btn">Learn
-        more</button>
+      <button class="btn">Learn more</button>
 
 
       <div class="logos__container">
@@ -107,16 +109,20 @@
       </div>
     </div>
     <div class="banner__container">
-      <img src="./images/image-hero-desktop.png" class="banner__img" alt="">
+      <img src="./images/image-hero-desktop.png" class="banner__img__desktop" alt="">
+      <img src="./images/image-hero-mobile.png" class="banner__img__mobile" alt="">
     </div>
 
   </main>
   <footer>
-    Challenge by <a href="https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5"
-      target="_blank">Frontend
-      Mentor</a>.
-    <p> Coded by <a target="_blank" href="https://www.frontendmentor.io/profile/un-earthly">Alamin</a>.</p>
-    </>
+    <span>
+
+      Challenge by <a href="https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5"
+        target="_blank">Frontend
+        Mentor</a>.
+    </span>
+    <span>Coded by <a target="_blank" href="https://www.frontendmentor.io/profile/un-earthly">Alamin</a>.
+    </span>
 </body>
 
 </html>
