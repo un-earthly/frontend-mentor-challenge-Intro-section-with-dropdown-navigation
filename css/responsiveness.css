@@ -63,6 +63,10 @@
 
     .text__container {
         width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .banner__container {
@@ -73,10 +77,6 @@
         font-size: 2rem;
     }
 
-    .text__container button {
-        display: block;
-        margin: auto;
-    }
 
     .logos__container {
         width: 50%;
@@ -94,4 +94,5 @@
         display: block;
         width: 100%;
     }
+
 }
